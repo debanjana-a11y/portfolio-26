@@ -355,6 +355,19 @@ svg {
   margin-top: 12px;
 }
 
+.site-footer {
+  padding: 20px 0 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 18px;
+}
+
+.site-footer p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
 .skill-block {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
