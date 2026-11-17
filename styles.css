@@ -129,8 +129,8 @@ svg {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: auto;
-  padding: 10px 0 4px;
+  margin-top: 8px;
+  padding: 4px 0 0;
 }
 
 .sidebar-socials a {
@@ -177,19 +177,19 @@ svg {
 
 .hero-title,
 .section-title {
-  margin: 0 0 18px;
-  line-height: 0.95;
-  letter-spacing: -0.06em;
-  color: rgba(255, 255, 255, 0.95);
+  margin: 0 0 16px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.96);
   font-weight: 500;
 }
 
 .hero-title {
-  font-size: clamp(2.8rem, 4vw, 4.8rem);
+  font-size: clamp(2.3rem, 3.2vw, 3.5rem);
 }
 
 .section-title {
-  font-size: clamp(2.3rem, 3vw, 3.6rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
 }
 
 .hero-title span {
@@ -198,17 +198,18 @@ svg {
 
 .hero-role,
 .resume-role {
-  margin: 0 0 22px;
-  font-size: clamp(1rem, 1.5vw, 1.4rem);
-  letter-spacing: -0.02em;
-  color: rgba(255, 255, 255, 0.72);
+  margin: 0 0 18px;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
 }
 
 .content-wrap p {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   max-width: 980px;
-  font-size: clamp(1rem, 1.2vw, 1.2rem);
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.75;
   letter-spacing: -0.01em;
   color: rgba(255, 255, 255, 0.78);
 }
@@ -271,15 +272,15 @@ svg {
 
 .timeline-content h3 {
   margin: 0 0 6px;
-  font-size: clamp(1.2rem, 2vw, 1.7rem);
-  line-height: 1.2;
-  letter-spacing: -0.04em;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  letter-spacing: -0.03em;
   color: rgba(255, 255, 255, 0.96);
 }
 
 .timeline-company {
   margin: 0 0 8px;
-  font-size: 1rem;
+  font-size: 0.92rem;
   color: rgba(255, 255, 255, 0.74);
 }
 
@@ -287,8 +288,8 @@ svg {
   margin: 0;
   padding-left: 1.2rem;
   color: rgba(255, 255, 255, 0.76);
-  line-height: 1.75;
-  font-size: 0.96rem;
+  line-height: 1.7;
+  font-size: 0.9rem;
 }
 
 .timeline-content li + li {
@@ -301,20 +302,25 @@ svg {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.resume-download {
-  margin-top: 28px;
+.resume-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
 }
 
-.resume-download a {
+.resume-download {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 1.2rem;
+  padding: 0.7rem 1rem;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.04);
   color: rgba(255, 255, 255, 0.96);
   font-weight: 600;
+  font-size: 0.9rem;
 }
 
 .section-header-row {
@@ -323,6 +329,10 @@ svg {
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 20px;
+}
+
+.compact-row {
+  margin-bottom: 12px;
 }
 
 .more-link {
@@ -338,10 +348,40 @@ svg {
   white-space: nowrap;
 }
 
+.skills-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.skill-block {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 18px 18px 12px;
+}
+
+.skill-block h3 {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.skill-block ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  font-size: 0.92rem;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+  gap: 22px;
 }
 
 .project-card {
@@ -360,77 +400,75 @@ svg {
   border-color: rgba(255, 255, 255, 0.18);
 }
 
-.project-preview {
+.project-visual {
   position: relative;
-  height: 230px;
-  background-size: cover;
-  background-position: center;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.preview-one {
-  background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06)),
-    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80");
-}
-
-.preview-two {
-  background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)),
-    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80");
-}
-
-.preview-three {
-  background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)),
-    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80");
-}
-
-.preview-four {
-  background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)),
-    url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80");
-}
+.tone-1 { background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04)); }
+.tone-2 { background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)); }
+.tone-3 { background: linear-gradient(135deg, rgba(255,255,255,0.11), rgba(255,255,255,0.05)); }
+.tone-4 { background: linear-gradient(135deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02)); }
 
 .project-tag {
   position: absolute;
   left: 16px;
   top: 16px;
-  padding: 0.4rem 0.7rem;
+  padding: 0.38rem 0.7rem;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.52);
+  background: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255,255,255,0.08);
-  font-size: 0.68rem;
+  font-size: 0.64rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: rgba(255,255,255,0.8);
 }
 
+.project-visual h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  color: rgba(255,255,255,0.96);
+}
+
+.project-content {
+  padding: 14px 16px 18px;
+}
+
 .project-meta {
-  padding: 14px 18px 0;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.7);
+  margin-bottom: 8px;
 }
 
-.project-card h3 {
-  padding: 0 18px 18px;
+.project-content p {
   margin: 0;
-  font-size: clamp(1.2rem, 1.8vw, 1.8rem);
-  letter-spacing: -0.05em;
-  line-height: 1.1;
-  color: rgba(255,255,255,0.96);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.72);
 }
 
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 20px;
 }
 
 .blog-card {
   display: block;
-  border-radius: 18px;
+  border-radius: 16px;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.02);
+  padding: 16px;
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
@@ -440,72 +478,31 @@ svg {
   border-color: rgba(255,255,255,0.16);
 }
 
-.blog-card-image {
-  height: 180px;
-  background-size: cover;
-  background-position: center;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.blog-card-body {
-  padding: 16px 18px 18px;
+.blog-card-header {
+  margin-bottom: 10px;
 }
 
 .blog-meta {
   margin-bottom: 8px;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.6);
 }
 
 .blog-card h3 {
-  margin: 0 0 10px;
-  font-size: clamp(1.05rem, 1.5vw, 1.5rem);
-  line-height: 1.3;
-  letter-spacing: -0.04em;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+  letter-spacing: -0.03em;
   color: rgba(255,255,255,0.95);
 }
 
 .blog-card p {
   margin: 0;
-  font-size: 0.92rem;
-  line-height: 1.6;
+  font-size: 0.85rem;
+  line-height: 1.55;
   color: rgba(255,255,255,0.7);
-}
-
-.art-copy {
-  margin-bottom: 18px;
-}
-
-.art-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.art-card {
-  min-height: 220px;
-  border-radius: 18px;
-  border: 1px solid rgba(255,255,255,0.08);
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 16px 24px rgba(0,0,0,0.14);
-}
-
-.art-one {
-  background: linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.05)),
-    url("https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80");
-}
-
-.art-two {
-  background: linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.05)),
-    url("https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=900&q=80");
-}
-
-.art-three {
-  background: linear-gradient(135deg, rgba(0,0,0,0.1), rgba(0,0,0,0.05)),
-    url("https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80");
 }
 
 @media (max-width: 1180px) {

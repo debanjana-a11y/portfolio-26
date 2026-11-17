@@ -35,6 +35,10 @@
             <span class="nav-icon">◉</span>
             <span>Resume</span>
           </button>
+          <button class="nav-item" data-section="skills" type="button">
+            <span class="nav-icon">✦</span>
+            <span>Skills</span>
+          </button>
           <button class="nav-item" data-section="projects" type="button">
             <span class="nav-icon">▣</span>
             <span>Projects</span>
@@ -43,21 +47,11 @@
             <span class="nav-icon">✎</span>
             <span>Blog</span>
           </button>
-          <button class="nav-item" data-section="art" type="button">
-            <span class="nav-icon">✐</span>
-            <span>Art</span>
-          </button>
         </nav>
 
         <div class="sidebar-socials" aria-label="Social links">
           <a href="https://x.com/debanjanastwt" target="_blank" rel="noreferrer" aria-label="X / Twitter">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2h3.5l-7.6 8.7L23 22h-6.9l-5.4-7.8L4.4 22H.9l8.2-9.3L1 2h7.1l4.9 7.1L18.9 2Zm-1.2 18.1h1.9L7.1 3.8H5.1l12.6 16.3Z"/></svg>
-          </a>
-          <a href="https://www.tiktok.com/@milksandmatcha" target="_blank" rel="noreferrer" aria-label="TikTok">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 2c.5 1.5 1.6 2.7 3.1 3.3v2.9c-1.2 0-2.3-.3-3.4-.9v6.3c0 3.3-2.7 6-6 6s-6-2.7-6-6 2.7-6 6-6c.4 0 .8 0 1.2.1v3c-.4-.1-.8-.1-1.2-.1-1.6 0-2.9 1.3-2.9 3 0 1.6 1.3 2.9 2.9 2.9 1.6 0 2.9-1.3 2.9-2.9V2h3.4Zm2.3 0h2.7v2.7h-2.7V2Zm-1.4 2.6v2.2c-1.2.5-2.2 1.7-2.2 3.1v6.1c0 2.8 2.2 5 5 5s5-2.2 5-5v-1.3l-3.4 1.6v-1.2c0-1.7-1.4-3.1-3.1-3.1V4.6h-1.3Z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/milksandmatcha/" target="_blank" rel="noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm5.25-3.2a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z"/></svg>
           </a>
           <a href="https://www.linkedin.com/in/debanjana-sarkar-697bb9b1/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.9 5.4a1.56 1.56 0 0 1 .04 3.1ZM5.5 9.9h2.8v10.1H5.5V9.9Zm5.1 0h2.7v1.4h.1c.4-.7 1.3-1.5 2.8-1.5 3 0 3.5 2 3.5 4.6V20H17.7v-18.6h3.3V20h-3.4v-9.2c0-2.2-.2-2.8-1.7-2.8-1.5 0-1.9 1-1.9 2.7V20H10.6V9.9Z"/></svg>
@@ -84,10 +78,19 @@
             </p>
 
             <p>
+              I am enthusiastic in <strong>AI/ML</strong>, <strong>Gen-AI</strong>,
+              <strong>Agentic Workflow</strong>, and <strong>Distributed Systems</strong>.
+              I enjoy building practical systems that connect engineering depth with real-world
+              automation and intelligence.
+            </p>
+
+            <p>
               I previously worked with <strong>telecom and backend systems</strong>, and today I
               focus on <strong>developer productivity tools</strong>,
               <strong>local LLM integrations</strong>, and
-              <strong>fault-tolerant architectural services</strong>.
+              <strong>fault-tolerant architectural services</strong>. My current GenAI exploration
+              includes <strong>JIRASense</strong> — a Motorola Solutions Gen-AI utility that reduced
+              manual workflow overhead by 70% and accelerated issue diagnosis across engineering teams.
             </p>
 
             <p>
@@ -105,7 +108,12 @@
 
         <section id="resume" class="page-panel" aria-label="Resume section">
           <div class="content-wrap narrow">
-            <h1 class="section-title">RESUME</h1>
+            <div class="resume-header">
+              <h1 class="section-title">RESUME</h1>
+              <a class="resume-download" href="./resume/Sarkar_Debanjana_Resume-testing.docx" target="_blank" rel="noreferrer">
+                Download Resume
+              </a>
+            </div>
 
             <p class="resume-role">Software Engineer II • Distributed Systems • Mission-Critical Telecom • GenAI</p>
 
@@ -119,7 +127,8 @@
                   <ul>
                     <li>Led ALDS architecture for dynamic subscriber traffic distribution in production.</li>
                     <li>Built mission-critical telecom and broadband-to-LMR interoperability systems.</li>
-                    <li>Designed GenAI tooling for engineering automation and AI-assisted troubleshooting.</li>
+                    <li>Designed JIRASense, a Gen-AI utility that reduced manual workflow overhead by 70% and accelerated engineering triage.</li>
+                    <li>Led cross-site AI transformation initiatives as a core member of the Innovation Team, training 50+ engineers globally on modern automation frameworks.</li>
                   </ul>
                 </div>
               </div>
@@ -148,11 +157,122 @@
                 </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div class="resume-download">
-              <a href="./resume/Sarkar_Debanjana_Resume-testing.docx" target="_blank" rel="noreferrer">
-                Download Resume
-              </a>
+        <section id="skills" class="page-panel" aria-label="Skills section">
+          <div class="content-wrap narrow">
+            <div class="section-header-row compact-row">
+              <h1 class="section-title">SKILLS</h1>
+            </div>
+
+            <div class="skills-wrap">
+              <div class="skill-block">
+                <h3>Programming</h3>
+                <ul>
+                  <li>C++</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>JavaScript</li>
+                  <li>React.js</li>
+                  <li>Node.js</li>
+                  <li>SQL</li>
+                  <li>Bash</li>
+                </ul>
+              </div>
+
+              <div class="skill-block">
+                <h3>GenAI & Agentic AI</h3>
+                <ul>
+                  <li>RAG</li>
+                  <li>Prompt Engineering</li>
+                  <li>LLM Integration</li>
+                  <li>AI Agents</li>
+                  <li>LangChain</li>
+                  <li>Vector Database</li>
+                  <li>Model Context Protocol</li>
+                  <li>Agent Workflow Automation</li>
+                </ul>
+              </div>
+
+              <div class="skill-block">
+                <h3>Infrastructure</h3>
+                <ul>
+                  <li>Docker</li>
+                  <li>Kubernetes</li>
+                  <li>NGINX</li>
+                  <li>Consul</li>
+                  <li>Hashicorp Vault</li>
+                  <li>Linux IPC</li>
+                  <li>Microservices</li>
+                  <li>High Availability</li>
+                  <li>Cloud / CI-CD</li>
+                </ul>
+              </div>
+
+              <div class="skill-block">
+                <h3>Leadership</h3>
+                <ul>
+                  <li>System Architecture</li>
+                  <li>Technical Roadmapping</li>
+                  <li>Mentorship</li>
+                  <li>Code Governance</li>
+                  <li>Sprint Planning</li>
+                  <li>Technical Debt Reduction</li>
+                  <li>Cross-Site Enablement</li>
+                </ul>
+              </div>
+
+              <div class="skill-block">
+                <h3>Telecom</h3>
+                <ul>
+                  <li>4G / 5G Core Architecture</li>
+                  <li>Interop Communication</li>
+                  <li>Broadband-to-LMR</li>
+                  <li>NGAP / NAS / SIP / GTPU</li>
+                  <li>RTP / RTCP</li>
+                  <li>Public Safety Systems</li>
+                  <li>Mission-Critical Communication</li>
+                </ul>
+              </div>
+
+              <div class="skill-block">
+                <h3>Databases</h3>
+                <ul>
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>Couchbase</li>
+                  <li>GridGain</li>
+                  <li>TimesTenDB</li>
+                  <li>Redis / Caching</li>
+                  <li>ChromaDB</li>
+                </ul>
+              </div>
+
+              <div class="skill-block">
+                <h3>Distributed Systems</h3>
+                <ul>
+                  <li>Adaptive Load Balancing</li>
+                  <li>Fault Tolerance</li>
+                  <li>Message Queues</li>
+                  <li>Load Balancers</li>
+                  <li>High Availability Systems</li>
+                  <li>Distributed Deployments</li>
+                  <li>Idempotent System</li>
+                </ul>
+              </div>
+
+              <div class="skill-block">
+                <h3>Production Support</h3>
+                <ul>
+                  <li>Observability & Monitoring</li>
+                  <li>Design Patterns</li>
+                  <li>Technical Debugging</li>
+                  <li>System Troubleshooting</li>
+                  <li>Performance Tuning</li>
+                  <li>Production Incident Handling</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -160,45 +280,13 @@
         <section id="projects" class="page-panel" aria-label="Projects section">
           <div class="content-wrap">
             <div class="section-header-row">
-              <h1 class="section-title">RECENT PROJECTS</h1>
+              <h1 class="section-title">PERSONAL PROJECTS</h1>
               <a class="more-link" href="https://github.com/debanjana-a11y" target="_blank" rel="noreferrer">
                 View GitHub →
               </a>
             </div>
 
-            <div class="project-grid">
-              <a class="project-card" href="https://github.com/debanjana-a11y/Nemotron-ATS-War-Room" target="_blank" rel="noreferrer">
-                <div class="project-preview preview-one">
-                  <span class="project-tag">LLM</span>
-                </div>
-                <div class="project-meta">APP</div>
-                <h3>Nemotron-ATS-War-Room</h3>
-              </a>
-
-              <a class="project-card" href="https://github.com/debanjana-a11y/job-application-tracker" target="_blank" rel="noreferrer">
-                <div class="project-preview preview-two">
-                  <span class="project-tag">Automation</span>
-                </div>
-                <div class="project-meta">TECHNICAL NOTES</div>
-                <h3>job-application-tracker</h3>
-              </a>
-
-              <a class="project-card" href="https://github.com/debanjana-a11y/TodoList" target="_blank" rel="noreferrer">
-                <div class="project-preview preview-three">
-                  <span class="project-tag">Productivity</span>
-                </div>
-                <div class="project-meta">COMMUNITY</div>
-                <h3>TodoList</h3>
-              </a>
-
-              <a class="project-card" href="https://github.com/debanjana-a11y/tophonetics" target="_blank" rel="noreferrer">
-                <div class="project-preview preview-four">
-                  <span class="project-tag">Language</span>
-                </div>
-                <div class="project-meta">CODING TUTORIAL</div>
-                <h3>ToPhonetic</h3>
-              </a>
-            </div>
+            <div id="project-grid" class="project-grid" aria-live="polite"></div>
           </div>
         </section>
 
@@ -210,22 +298,7 @@
                 Read on Medium →
               </a>
             </div>
-            <div id="blog-grid" class="blog-grid" aria-live="polite"></div>
-          </div>
-        </section>
-
-        <section id="art" class="page-panel" aria-label="Art section">
-          <div class="content-wrap narrow">
-            <h1 class="section-title">ART</h1>
-            <p class="art-copy">
-              Artistic exploration, visual thinking, and creative experiments around systems,
-              design, and storytelling.
-            </p>
-            <div class="art-grid">
-              <div class="art-card art-one"></div>
-              <div class="art-card art-two"></div>
-              <div class="art-card art-three"></div>
-            </div>
+            <div id="blog-grid" class="blog-grid compact" aria-live="polite"></div>
           </div>
         </section>
       </main>
