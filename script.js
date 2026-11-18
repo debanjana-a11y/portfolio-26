@@ -5,6 +5,13 @@ const blogGrid = document.getElementById('blog-grid');
 
 const personalProjects = [
   {
+    title: 'Hyper-Local AQI & PM2.5 Forecasting Engine (Kolkata)',
+    tag: 'Training from Scratch',
+    type: 'ML Model',
+    summary: 'A hyper-local AQI and PM2.5 forecasting engine that reduces street-level error by 90.1% compared with Open-Meteo\'s raw regional model.',
+    link: 'https://github.com/debanjana-a11y/AQI-predictor'
+  },
+  {
     title: 'Nemotron-ATS-War-Room',
     tag: 'LLM',
     type: 'AI APP',
